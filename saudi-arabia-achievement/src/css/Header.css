@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+/* Consisit Style */
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  row-gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.paddings {
+  padding: 0.3rem;
+}
+.innerWidth {
+  width: 100%;
+}
+/* Header Style */
+.h-wrapper {
+  background: white;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.link-color {
+  color: black;
+}
+.btn-signin {
+  background: none;
+  border: 1px solid rgb(6, 29, 6);
+  color: rgb(6, 29, 6);
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  border-radius: 4px;
+  transition: all 300ms ease-in;
+}
+.h-container {
+  justify-content: space-between;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  color: rgba(255, 255, 255, 0.904);
+}
+.h-menue {
+  gap: 2rem;
+}
+.h-menue > *:hover {
+  cursor: pointer;
+}
+
+.button {
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  color: white;
+  background: rgb(6, 29, 6);
+  border: none;
+  border-radius: 4px;
+  transition: all 300ms ease-in;
+}
+.btn-signin:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* Media queries */
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+@media (min-width: 640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1280px), (min-width: 768px) {
+  .paddings {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .primaryText {
+    font-size: 1.5rem;
+  }
+  .orangeText {
+    font-size: 1.2rem;
+  }
+}
